@@ -2,7 +2,7 @@
 
 ## "Happy Path" Merchant-only Account Checkout
 
-![Happy Path for Merchant-only Accounts](../diagrams/payment_gateway_usecase.png)
+![Happy Path for Merchant-only Accounts](../../diagrams/payment_gateway_usecase.png)
 
 _Happy path of the checkout process when only the merchant has an account_
 
