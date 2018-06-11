@@ -1,4 +1,4 @@
-# occ-contracts
+# occ-payments
 
 ## Diagrams
 
