@@ -1,0 +1,23 @@
+@startuml
+start
+  :Checkout;
+  :Pay w/ OCC;
+  fork
+    :..Display..
+    - order total details in fiat/OCC
+    - QR code
+    - 'Send' button for Dapp browsers;
+    note right: generate address linked to merchant
+    if (Customer sends payment tx) then (yes)
+      :credit merchant account;
+    else (no)
+      :wait for tx;
+      repeat
+        :recalculate order total in fiat/OCC;
+        note right: Once per (15 mins? 1 hour? 24 hrs?)
+      repeat while (waiting on transaction?)
+    endif
+  endfork
+  :redirect to merchant;
+stop
+@enduml

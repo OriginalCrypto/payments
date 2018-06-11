@@ -1,0 +1,17 @@
+{
+  "name": "payments",
+  "version": "0.0.1",
+  "description": "express application to handle OCC payments",
+  "main": "index.js",
+  "scripts": {
+   "test":"test",
+    "diagram": "java -jar ./tools/plantuml.jar $*"
+  },
+  "keywords": [
+    "ethereum",
+    "occ",
+    "payments"
+  ],
+  "author": "Mish Ochu <mishochu@gmail.com>",
+  "license": "MIT"
+}
