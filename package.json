@@ -3,8 +3,12 @@
   "version": "0.0.1",
   "description": "express application to handle OCC payments",
   "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
   "scripts": {
-   "test":"test",
+    "test": "mocha --recursive",
     "diagram": "java -jar ./tools/plantuml.jar $*"
   },
   "keywords": [
@@ -13,5 +17,18 @@
     "payments"
   ],
   "author": "Mish Ochu <mishochu@gmail.com>",
-  "license": "MIT"
+  "contributors": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/OriginalCrypto/payments.git"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "engines": {
+    "node": ">= 4.x <= 9.x",
+    "npm": ">= 2.x <= 5.x"
+  } 
 }
+
