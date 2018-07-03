@@ -29,6 +29,10 @@
   "engines": {
     "node": ">= 4.x <= 9.x",
     "npm": ">= 2.x <= 5.x"
-  } 
+  },
+  "dependencies": {
+    "bip39": "^2.5.0",
+    "ethereumjs-util": "^5.2.0",
+    "hdkey": "^1.0.0"
+  }
 }
-

@@ -2,7 +2,6 @@
 /*global it */
 
 const addressStore = require('../../../src/core/stores/address')
-
 const assert = require('assert')
 
 describe('stores.address', function() {
