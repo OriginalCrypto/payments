@@ -8,6 +8,11 @@
     "test": "test"
   },
   "scripts": {
+    "ci": "npm run lint:js && npm run cover && npm run report",
+    "lint:js": "eslint src/**/*.js test/**/*.js",
+    "cover": "nyc mocha --recursive",
+    "cover:report": "nyc report --reporter=text-lcov | coveralls",
+    "report": "nyc report --reporter=text-lcov | coveralls",
     "test": "mocha --recursive",
     "diagram": "java -jar ./tools/plantuml.jar $*"
   },
@@ -24,7 +29,12 @@
     "url": "git+ssh://git@github.com/OriginalCrypto/payments.git"
   },
   "devDependencies": {
-    "mocha": "^5.2.0"
+    "coveralls": "^3.0.2",
+    "eslint": "^5.0.1",
+    "eslint-plugin-mocha": "^5.0.0",
+    "eslint-plugin-node": "^6.0.1",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2"
   },
   "engines": {
     "node": ">= 4.x <= 9.x",
