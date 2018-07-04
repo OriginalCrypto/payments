@@ -5,9 +5,10 @@ const bip39 = require('bip39'),
 
 function create (mnemonic, password, index=0) {
     
-    const path = `m/44'/0'/0'/0/`
+    let path = `m/44'/0'/0'/0/`
 
     try {
+    //index defaults to 0
      path += index.toString(10)
 
      //add additional error checking
